@@ -1,5 +1,16 @@
+import { Layout } from "./Layout";
+
+import LocateShipping from "../pages/LocateShipping/LocateShipping";
+import PostOfficeList from "../pages/PostOfficeList/PostOfficeList";
+
 export const App = () => {
   return (
-    <h1>Start</h1>
+    <>
+      {/* temporary adding the components here to have a visual
+      will add routing later*/}
+      <Layout />
+      <LocateShipping />
+      <PostOfficeList />
+    </>
   );
 }
