@@ -1,3 +1,5 @@
+import { Suspense } from 'react';
+import { Outlet } from "react-router-dom";
 import { AppBar } from "./AppBar/AppBar";
 
 export const Layout = () => {
@@ -5,7 +7,9 @@ export const Layout = () => {
         <>
             <AppBar />
         
-            {/* Will add Suspence and Outlet later when routing is added */}
+            <Suspense fallback="Loading...">
+                <Outlet />
+            </Suspense>
         </>
     )
 }

@@ -10,13 +10,14 @@ const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 export const App = () => {
   return (
     <>
-      {/* temporary adding the components here to have a visual
-      will add routing later*/}
-      <Layout />
-      <Home />
-      <LocateShipping />
-      <PostOfficeList />
-      <NotFound />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+            <Route path='shippings' element={<LocateShipping />} />
+            <Route path='offices' element={<PostOfficeList />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
     </>
   );
 }
