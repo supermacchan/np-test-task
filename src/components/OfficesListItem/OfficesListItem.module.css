@@ -1,0 +1,29 @@
+.item {
+    margin: 0 0 20px 0; 
+}
+
+.item:last-of-type {
+    margin: 0;
+}
+
+.number {
+    margin: 0 0 10px 0; 
+
+    color: var(--accent-text-color);
+    
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.address {
+    margin: 0 0 5px 0;
+
+    color: var(--main-text-color);
+    
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.address:last-of-type {
+    margin: 0;
+}
