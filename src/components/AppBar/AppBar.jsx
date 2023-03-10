@@ -5,7 +5,7 @@ export const AppBar = () => {
     return (
         <header className={css.header}>
             <nav className={css.navigation}>
-                <NavLink to="/shippings" className={css.navLink}>
+                <NavLink to="/" className={css.navLink}>
                     Перевірити ТТН
                 </NavLink>
                 <NavLink to="/offices" className={css.navLink}>
