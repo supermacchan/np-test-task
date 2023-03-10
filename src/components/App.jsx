@@ -1,16 +1,21 @@
+import { lazy } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import { Layout } from "./Layout";
 
-import LocateShipping from "../pages/LocateShipping/LocateShipping";
-import PostOfficeList from "../pages/PostOfficeList/PostOfficeList";
+const LocateShipping = lazy(() => import('../pages/LocateShipping/LocateShipping'));
+const PostOfficeList = lazy(() => import('../pages/PostOfficeList/PostOfficeList'));
+const NotFound = lazy(() => import('../pages/NotFound/NotFound'));
 
 export const App = () => {
   return (
     <>
-      {/* temporary adding the components here to have a visual
-      will add routing later*/}
-      <Layout />
-      <LocateShipping />
-      <PostOfficeList />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<LocateShipping />} />
+            <Route path='offices' element={<PostOfficeList />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
     </>
   );
 }
