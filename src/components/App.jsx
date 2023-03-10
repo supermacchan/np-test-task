@@ -1,5 +1,11 @@
+import { Layout } from "./Layout";
+
 export const App = () => {
   return (
-    <h1>Start</h1>
+    <>
+      {/* temporary adding the components here to have a visual
+      will add routing later*/}
+      <Layout />
+    </>
   );
 }
