@@ -1,0 +1,38 @@
+.history {
+    width: 200px;
+    min-height: 600px;
+    padding: 20px;
+
+    border: 1px solid var(--hover-bg-color);
+    border-radius: 2px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+.title {
+    margin: 0 0 15px 0;
+
+    color: var(--accent-text-color);
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    margin: 0 0 10px 0;
+
+    color: var(--main-text-color);
+    
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.item:last-of-type {
+    margin: 0;
+}

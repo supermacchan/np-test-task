@@ -1,9 +1,11 @@
+import css from './ShippingInfo.module.css';
+
 export const ShippingInfo = () => {
     return (
-        <div>
-            <h2>Статус доставки:</h2>
-            <p>Відправлено:</p>
-            <p>Отримано:</p>
+        <div className={css.info}>
+            <h2 className={css.status}>Статус доставки:</h2>
+            <p className={css.details}>Відправлено:</p>
+            <p className={css.details}>Отримано:</p>
         </div>
     )
 }
