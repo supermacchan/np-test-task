@@ -1,6 +1,7 @@
 import { Layout } from "./Layout";
 
-import LocateShipping from "../pages/LocateShipping/LocateShipping"
+import LocateShipping from "../pages/LocateShipping/LocateShipping";
+import PostOfficeList from "../pages/PostOfficeList/PostOfficeList";
 
 export const App = () => {
   return (
@@ -9,6 +10,7 @@ export const App = () => {
       will add routing later*/}
       <Layout />
       <LocateShipping />
+      <PostOfficeList />
     </>
   );
 }
