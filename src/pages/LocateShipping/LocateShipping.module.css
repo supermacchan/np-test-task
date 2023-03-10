@@ -1,0 +1,6 @@
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 30px;
+}

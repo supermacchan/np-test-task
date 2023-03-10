@@ -13,3 +13,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --accent-bg-color: #ff3333;
+  --main-bg-color: #fff;
+  --secondary-bg-color: #f2f2f2;
+  --hover-bg-color: #595959;
+  --main-text-color: #000;
+  --secondary-text-color: #fff;
+  --accent-text-color: #cc0000;
+}
