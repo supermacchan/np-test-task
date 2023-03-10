@@ -1,0 +1,31 @@
+.header {
+    padding: 20px 0;
+    background-color: var(--accent-bg-color);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navLink {
+    padding: 15px 18px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: background-color 250ms ease,
+    color 250ms ease;
+}
+
+.navLink:hover,
+.navLink:focus {
+    background-color: var(--hover-bg-color);
+    color: var(--secondary-text-color);
+}
