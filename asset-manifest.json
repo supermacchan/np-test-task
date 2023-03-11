@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/np-test-task/static/css/main.818242e3.css",
-    "main.js": "/np-test-task/static/js/main.2fc81948.js",
-    "static/css/912.c738ecc4.chunk.css": "/np-test-task/static/css/912.c738ecc4.chunk.css",
-    "static/js/912.4cc84b4d.chunk.js": "/np-test-task/static/js/912.4cc84b4d.chunk.js",
+    "main.js": "/np-test-task/static/js/main.cf75c7f6.js",
+    "static/css/912.ed6e9a82.chunk.css": "/np-test-task/static/css/912.ed6e9a82.chunk.css",
+    "static/js/912.22153cdf.chunk.js": "/np-test-task/static/js/912.22153cdf.chunk.js",
     "static/css/293.5b900013.chunk.css": "/np-test-task/static/css/293.5b900013.chunk.css",
-    "static/js/293.c1bb7aa2.chunk.js": "/np-test-task/static/js/293.c1bb7aa2.chunk.js",
-    "static/js/256.f99fde1b.chunk.js": "/np-test-task/static/js/256.f99fde1b.chunk.js",
+    "static/js/293.b210c0f8.chunk.js": "/np-test-task/static/js/293.b210c0f8.chunk.js",
+    "static/css/666.ac3bc30d.chunk.css": "/np-test-task/static/css/666.ac3bc30d.chunk.css",
+    "static/js/666.3bf6cd2c.chunk.js": "/np-test-task/static/js/666.3bf6cd2c.chunk.js",
     "index.html": "/np-test-task/index.html",
     "main.818242e3.css.map": "/np-test-task/static/css/main.818242e3.css.map",
-    "main.2fc81948.js.map": "/np-test-task/static/js/main.2fc81948.js.map",
-    "912.c738ecc4.chunk.css.map": "/np-test-task/static/css/912.c738ecc4.chunk.css.map",
-    "912.4cc84b4d.chunk.js.map": "/np-test-task/static/js/912.4cc84b4d.chunk.js.map",
+    "main.cf75c7f6.js.map": "/np-test-task/static/js/main.cf75c7f6.js.map",
+    "912.ed6e9a82.chunk.css.map": "/np-test-task/static/css/912.ed6e9a82.chunk.css.map",
+    "912.22153cdf.chunk.js.map": "/np-test-task/static/js/912.22153cdf.chunk.js.map",
     "293.5b900013.chunk.css.map": "/np-test-task/static/css/293.5b900013.chunk.css.map",
-    "293.c1bb7aa2.chunk.js.map": "/np-test-task/static/js/293.c1bb7aa2.chunk.js.map",
-    "256.f99fde1b.chunk.js.map": "/np-test-task/static/js/256.f99fde1b.chunk.js.map"
+    "293.b210c0f8.chunk.js.map": "/np-test-task/static/js/293.b210c0f8.chunk.js.map",
+    "666.ac3bc30d.chunk.css.map": "/np-test-task/static/css/666.ac3bc30d.chunk.css.map",
+    "666.3bf6cd2c.chunk.js.map": "/np-test-task/static/js/666.3bf6cd2c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.818242e3.css",
-    "static/js/main.2fc81948.js"
+    "static/js/main.cf75c7f6.js"
   ]
 }
