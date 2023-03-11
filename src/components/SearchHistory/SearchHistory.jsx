@@ -1,16 +1,45 @@
+import { useSelector, useDispatch } from 'react-redux';
+import { selectHistory } from 'redux/selectors';
+import { fetchShipping } from "redux/operations";
+import { clearHistory } from 'redux/historySlice';
+import { nanoid } from 'nanoid';
 import css from './SearchHistory.module.css';
 
 export const SearchHistory = () => {
+    const history = useSelector(selectHistory);
+    const dispatch = useDispatch();
+
+    const handleItemClick = (event) => {
+        dispatch(fetchShipping(event.target.innerText));
+    }
+
+    const handleClearHistory = () => {
+        console.log('clear');
+        dispatch(clearHistory());
+    }
+
     return (
         <div className={css.history}>
             <h2 className={css.title}>Історія</h2>
             <ul className={css.list}>
-                {/* a list of queries will be here */}
-                {/* adding a few test ones temporarily, to adjust the styles */}
-                <li className={css.item}>20400048799001</li>
-                <li className={css.item}>20400048799002</li>
-                <li className={css.item}>20400048799003</li>
+                { history.length > 0 && 
+                    history.map(item => 
+                        <li 
+                            className={css.item} 
+                            key={nanoid()}
+                            onClick={handleItemClick}
+                        >
+                            {item}
+                        </li>)
+                }
             </ul>
+            <button 
+                type='button'
+                className={css.button}
+                onClick={handleClearHistory}
+            >
+                Видалити всі
+            </button>
         </div>
     )
 }

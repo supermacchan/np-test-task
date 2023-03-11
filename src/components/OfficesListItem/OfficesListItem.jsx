@@ -1,11 +1,10 @@
 import css from './OfficesListItem.module.css';
 
-export const OfficesListItem = () => {
+export const OfficesListItem = ({ num, address }) => {
     return (
         <li className={css.item}>
-            <p className={css.number}>Відділення №</p>
-            <p className={css.address}>Місто</p>
-            <p className={css.address}>Адреса:</p>
+            <p className={css.number}>Відділення № {num}</p>
+            <p className={css.address}>Адреса: {address}</p>
         </li>
     )
 }

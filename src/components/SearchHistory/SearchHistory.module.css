@@ -1,4 +1,6 @@
 .history {
+    position: relative;
+
     width: 200px;
     min-height: 600px;
     padding: 20px;
@@ -35,4 +37,32 @@
 
 .item:last-of-type {
     margin: 0;
+}
+
+.item:hover {
+    color: var(--accent-text-color);
+}
+
+.button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 6px 18px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--accent-text-color);
+    color: var(--secondary-text-color);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: background-color 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--hover-bg-color);
 }
