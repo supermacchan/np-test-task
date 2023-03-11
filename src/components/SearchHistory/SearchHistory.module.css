@@ -33,6 +33,8 @@
     
     font-size: 17px;
     font-weight: 500;
+
+    transition: color 250ms ease;
 }
 
 .item:last-of-type {
