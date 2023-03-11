@@ -1,3 +1,8 @@
+Created as a test task.
+[Requirements](https://docs.google.com/presentation/d/1ijcRHtZ6GhJphTsFL9JJOrEPKGCI9EykAyqyxfyWnCA/edit#slide=id.p)
+
+--------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
