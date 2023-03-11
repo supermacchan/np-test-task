@@ -1,0 +1,29 @@
+.content {
+    text-align: center;
+}
+
+.title {
+    margin-top: 40px;
+
+    font-size: 30px;
+    font-weight: 700;
+    
+    color: var(--accent-text-color);
+}
+
+.link {
+    margin-top: 20px;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    
+    color: var(--main-text-color);
+
+    transition: color 250ms ease;
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-text-color);
+}
