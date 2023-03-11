@@ -14,7 +14,6 @@ export const SearchHistory = () => {
     }
 
     const handleClearHistory = () => {
-        console.log('clear');
         dispatch(clearHistory());
     }
 

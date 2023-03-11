@@ -34,6 +34,8 @@
     font-size: 17px;
     font-weight: 500;
 
+    cursor: pointer;
+
     transition: color 250ms ease;
 }
 
