@@ -20,7 +20,6 @@ export const fetchShipping = createAsyncThunk(
 
         try {
             const response = await axios.post("", params);
-            console.log(response.data);
 
             if (response.data.errors.length > 0) {
                 throw new Error(response.data.errors[0])
@@ -48,7 +47,6 @@ export const fetchOffices = createAsyncThunk(
 
         try {
             const response = await axios.post("", params);
-            console.log(response.data);
             
             if (response.data.errors.length > 0) {
                 throw new Error(response.data.errors[0])
