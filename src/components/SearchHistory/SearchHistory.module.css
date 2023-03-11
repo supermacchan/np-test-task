@@ -39,6 +39,10 @@
     margin: 0;
 }
 
+.item:hover {
+    color: var(--accent-text-color);
+}
+
 .button {
     position: absolute;
     bottom: 20px;
