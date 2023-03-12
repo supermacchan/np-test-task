@@ -6,7 +6,9 @@
     margin: 0;
 }
 
-.number {
+/* desktop */
+
+.numberD {
     margin: 0 0 10px 0; 
 
     color: var(--accent-text-color);
@@ -15,11 +17,51 @@
     font-weight: 500;
 }
 
-.address {
+.addressD {
     margin: 0;
 
     color: var(--main-text-color);
     
     font-size: 17px;
+    font-weight: 400;
+}
+
+/* tablet */
+
+.numberT {
+    margin: 0 0 10px 0; 
+
+    color: var(--accent-text-color);
+    
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addressT {
+    margin: 0;
+
+    color: var(--main-text-color);
+    
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* mobile */
+
+.numberM {
+    margin: 0 0 10px 0; 
+
+    color: var(--accent-text-color);
+    
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.addressM {
+    margin: 0;
+
+    color: var(--main-text-color);
+    
+    font-size: 14px;
     font-weight: 400;
 }
