@@ -1,6 +1,27 @@
-.content {
+/* desktop */
+
+.contentD {
     display: flex;
     justify-content: center;
     gap: 15px;
     padding-bottom: 30px;
+}
+
+/* tablet */
+
+.contentT {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+/* mobile */
+
+.contentM {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 20px;
 }

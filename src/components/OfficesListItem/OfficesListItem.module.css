@@ -10,8 +10,6 @@
     margin: 0 0 10px 0; 
 
     color: var(--accent-text-color);
-    
-    font-size: 17px;
     font-weight: 500;
 }
 
@@ -19,7 +17,35 @@
     margin: 0;
 
     color: var(--main-text-color);
-    
-    font-size: 17px;
     font-weight: 400;
+}
+
+/* desktop */
+
+.numberD {
+    font-size: 17px; 
+}
+
+.addressD {
+    font-size: 17px; 
+}
+
+/* tablet */
+
+.numberT {
+    font-size: 16px;
+}
+
+.addressT {
+    font-size: 16px;
+}
+
+/* mobile */
+
+.numberM { 
+    font-size: 16px;
+}
+
+.addressM {
+    font-size: 14px;
 }

@@ -1,41 +1,11 @@
-.emptyInfo {
-    width: 600px;
-    height: 50px;
-    padding: 0 20px;
-
-    border: 1px solid transparent;
-    border-radius: 2px;
-
-    background-color: transparent;
-}
-
-.info {
-    width: 600px;
-    height: 250px;
-    padding: 20px;
-
-    border: 1px solid var(--hover-bg-color);
-    border-radius: 2px;
-
-    background-color: var(--secondary-bg-color);
-}
-
 .status {
     margin: 0 0 15px 0;
-
     color: var(--accent-text-color);
-
-    font-size: 20px;
-    font-weight: 700;
 }
 
 .details {
     margin: 0 0 10px 0;
-
     color: var(--main-text-color);
-
-    font-size: 17px;
-    font-weight: 500;
 }
 
 .details:last-of-type {
@@ -46,8 +16,100 @@
     margin: 0;
     
     color: var(--accent-text-color);
+    text-align: center;
+}
 
+/* desktop */
+
+.emptyInfoD {
+    width: 600px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.infoD {
+    width: 600px;
+    height: 220px;
+    padding: 20px;
+
+    border-radius: 2px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+.statusD {
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
+}
+
+.detailsD {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.errorD {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* tablet */
+
+.emptyInfoT {
+    width: 400px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+.infoT {
+    width: 400px;
+    height: 220px;
+    padding: 20px;
+
+    border-radius: 2px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+.statusT {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.detailsT {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.errorT {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* mobile */
+
+.emptyInfoM {
+    width: 320px;
+    padding: 0 10px;
+}
+
+.infoM {
+    width: 320px;
+    padding: 10px;
+
+    background-color: var(--main-bg-color);
+}
+
+.statusM {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.detailsM {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.errorM {
+    font-size: 17px;
+    font-weight: 500;
 }
