@@ -41,7 +41,7 @@ export const SearchHistory = () => {
                             className={css.button}
                             onClick={handleClearHistory}
                         >
-                            Видалити всі
+                            Очистити
                         </button>
                     }
                 </div>
@@ -68,7 +68,7 @@ export const SearchHistory = () => {
                             className={css.button}
                             onClick={handleClearHistory}
                         >
-                            Видалити всі
+                            Очистити
                         </button>
                     }
                 </div>
@@ -95,7 +95,7 @@ export const SearchHistory = () => {
                             className={css.button}
                             onClick={handleClearHistory}
                         >
-                            Видалити всі
+                            Очистити
                         </button>
                     }
                 </div>

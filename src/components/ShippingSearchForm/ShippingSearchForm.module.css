@@ -18,6 +18,7 @@
     background-color: var(--accent-text-color);
     color: var(--secondary-text-color);
 
+    font-family: inherit;
     font-size: 13px;
     font-weight: 500;
 
