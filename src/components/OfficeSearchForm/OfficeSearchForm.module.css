@@ -93,7 +93,6 @@
     transition: background-color 250ms ease;
 }
 
-.buttonM:hover,
 .buttonM:focus {
     background-color: var(--hover-bg-color);
 }
