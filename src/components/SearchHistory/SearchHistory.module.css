@@ -4,6 +4,56 @@
     margin: 0 0 45px 0;
 }
 
+.title {
+    margin: 0 0 15px 0;
+    color: var(--accent-text-color);
+}
+
+.item {
+    margin: 0 0 10px 0;
+    cursor: pointer;
+
+    color: var(--main-text-color);
+    transition: color 250ms ease;
+}
+
+.item:last-of-type {
+    margin: 0;
+}
+
+.item:hover,
+.item:active {
+    color: var(--accent-text-color);
+}
+
+.button {
+    position: absolute;
+
+    bottom: 20px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--accent-text-color);
+    color: var(--secondary-text-color);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: background-color 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--hover-bg-color);
+}
+
 /* desktop */
 
 .historyD {
@@ -19,57 +69,13 @@
 }
 
 .titleD {
-    margin: 0 0 15px 0;
-
-    color: var(--accent-text-color);
-
     font-size: 20px;
     font-weight: 700;
 }
 
 .itemD {
-    margin: 0 0 10px 0;
-
-    color: var(--main-text-color);
-    
     font-size: 17px;
     font-weight: 500;
-
-    cursor: pointer;
-
-    transition: color 250ms ease;
-}
-
-.itemD:last-of-type {
-    margin: 0;
-}
-
-.itemD:hover {
-    color: var(--accent-text-color);
-}
-
-.buttonD {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    padding: 10px 18px;
-    border: none;
-    border-radius: 2px;
-
-    background-color: var(--accent-text-color);
-    color: var(--secondary-text-color);
-
-    font-size: 13px;
-    font-weight: 500;
-
-    transition: background-color 250ms ease;
-}
-
-.buttonD:hover,
-.buttonD:focus {
-    background-color: var(--hover-bg-color);
 }
 
 /* tablet */
@@ -87,57 +93,13 @@
 }
 
 .titleT {
-    margin: 0 0 15px 0;
-
-    color: var(--accent-text-color);
-
     font-size: 20px;
     font-weight: 700;
 }
 
 .itemT {
-    margin: 0 0 10px 0;
-
-    color: var(--main-text-color);
-    
     font-size: 17px;
     font-weight: 400;
-
-    cursor: pointer;
-
-    transition: color 250ms ease;
-}
-
-.itemT:last-of-type {
-    margin: 0;
-}
-
-.itemT:hover {
-    color: var(--accent-text-color);
-}
-
-.buttonT {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    padding: 10px 18px;
-    border: none;
-    border-radius: 2px;
-
-    background-color: var(--accent-text-color);
-    color: var(--secondary-text-color);
-
-    font-size: 13px;
-    font-weight: 500;
-
-    transition: background-color 250ms ease;
-}
-
-.buttonT:hover,
-.buttonT:focus {
-    background-color: var(--hover-bg-color);
 }
 
 /* mobile */
@@ -156,10 +118,6 @@
 }
 
 .titleM {
-    margin: 0 0 15px 0;
-
-    color: var(--accent-text-color);
-
     font-size: 18px;
     font-weight: 500;
     text-align: center;
@@ -171,43 +129,6 @@
 }
 
 .itemM {
-    margin: 0 0 10px 0;
-
-    color: var(--main-text-color);
-    
     font-size: 16px;
     font-weight: 400;
-
-    transition: color 250ms ease;
-}
-
-.itemM:active {
-    color: var(--accent-text-color);
-}
-
-.itemM:last-of-type {
-    margin: 0;
-}
-
-.buttonM {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    padding: 10px 18px;
-    border: none;
-    border-radius: 2px;
-
-    background-color: var(--accent-text-color);
-    color: var(--secondary-text-color);
-
-    font-size: 13px;
-    font-weight: 500;
-
-    transition: background-color 250ms ease;
-}
-
-.buttonM:focus {
-    background-color: var(--hover-bg-color);
 }

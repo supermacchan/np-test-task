@@ -37,7 +37,7 @@ export const ShippingSearchForm = () => {
     return (
         <>
             <Desktop>
-                <form className={css.formD} onSubmit={handleFormSubmit}>
+                <form className={`${css.form} ${css.formD}`} onSubmit={handleFormSubmit}>
                     <input
                         type="text"
                         name="query"
@@ -45,13 +45,13 @@ export const ShippingSearchForm = () => {
                         required
                         title="Номер відправлення має складатися з 14 цифр та починатися з 2 або 5"
                         placeholder="Введіть номер ТТН"
-                        className={css.inputD}
+                        className={css.input}
                         onChange={handleInputChange}
                         value={trackingNum}
                     />
                     <button 
                         type="submit"
-                        className={css.buttonD}
+                        className={`${css.button} ${css.buttonD}`}
                     >
                         Перевірити статус
                     </button>
@@ -59,7 +59,7 @@ export const ShippingSearchForm = () => {
             </Desktop>
 
             <Tablet>
-                <form className={css.formT} onSubmit={handleFormSubmit}>
+                <form className={`${css.form} ${css.formT}`} onSubmit={handleFormSubmit}>
                     <input
                         type="text"
                         name="query"
@@ -67,13 +67,13 @@ export const ShippingSearchForm = () => {
                         required
                         title="Номер відправлення має складатися з 14 цифр та починатися з 2 або 5"
                         placeholder="Введіть номер ТТН"
-                        className={css.inputT}
+                        className={css.input}
                         onChange={handleInputChange}
                         value={trackingNum}
                     />
                     <button 
                         type="submit"
-                        className={css.buttonT}
+                        className={`${css.button} ${css.buttonT}`}
                     >
                         Перевірити статус
                     </button>
@@ -81,7 +81,7 @@ export const ShippingSearchForm = () => {
             </Tablet>
 
             <Mobile>
-                <form className={css.formM} onSubmit={handleFormSubmit}>
+                <form className={`${css.form} ${css.formM}`} onSubmit={handleFormSubmit}>
                     <input
                         type="text"
                         name="query"
@@ -89,13 +89,13 @@ export const ShippingSearchForm = () => {
                         required
                         title="Номер відправлення має складатися з 14 цифр та починатися з 2 або 5"
                         placeholder="Введіть номер ТТН"
-                        className={css.inputM}
+                        className={css.input}
                         onChange={handleInputChange}
                         value={trackingNum}
                     />
                     <button 
                         type="submit"
-                        className={css.buttonM}
+                        className={`${css.button} ${css.buttonM}`}
                     >
                         Перевірити статус
                     </button>

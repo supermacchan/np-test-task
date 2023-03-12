@@ -12,12 +12,12 @@ export const OfficesList = () => {
     return (
         <>
             <Desktop>
-                <div className={css.contentD}>
-                    <ul className={css.listD}>
+                <div className={`${css.content} ${css.contentD}`}>
+                    <ul className={`${css.list} ${css.listD}`}>
                         { isLoading && <Loader />}
 
                         { error &&
-                            <h2 className={css.errorD}>{ error }</h2>
+                            <h2 className={`${css.error} ${css.errorD}`}>{ error }</h2>
                         }
 
                         { list.length > 0 && 
@@ -33,12 +33,12 @@ export const OfficesList = () => {
             </Desktop>
         
             <Tablet>
-                <div className={css.contentT}>
-                    <ul className={css.listT}>
+                <div className={`${css.content} ${css.contentT}`}>
+                    <ul className={`${css.list} ${css.listT}`}>
                         { isLoading && <Loader />}
 
                         { error &&
-                            <h2 className={css.errorT}>{ error }</h2>
+                            <h2 className={`${css.error} ${css.errorT}`}>{ error }</h2>
                         }
 
                         { list.length > 0 && 
@@ -54,12 +54,12 @@ export const OfficesList = () => {
             </Tablet>
 
             <Mobile>
-                <div className={css.contentM}>
-                    <ul className={css.listM}>
+                <div className={`${css.content} ${css.contentM}`}>
+                    <ul className={`${css.list} ${css.listM}`}>
                         { isLoading && <Loader />}
 
                         { error &&
-                            <h2 className={css.errorM}>{ error }</h2>
+                            <h2 className={`${css.error} ${css.errorM}`}>{ error }</h2>
                         }
 
                         { list.length > 0 && 

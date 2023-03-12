@@ -6,62 +6,46 @@
     margin: 0;
 }
 
-/* desktop */
-
-.numberD {
+.number {
     margin: 0 0 10px 0; 
 
     color: var(--accent-text-color);
-    
-    font-size: 17px;
     font-weight: 500;
 }
 
-.addressD {
+.address {
     margin: 0;
 
     color: var(--main-text-color);
-    
-    font-size: 17px;
     font-weight: 400;
+}
+
+/* desktop */
+
+.numberD {
+    font-size: 17px; 
+}
+
+.addressD {
+    font-size: 17px; 
 }
 
 /* tablet */
 
 .numberT {
-    margin: 0 0 10px 0; 
-
-    color: var(--accent-text-color);
-    
     font-size: 16px;
-    font-weight: 500;
 }
 
 .addressT {
-    margin: 0;
-
-    color: var(--main-text-color);
-    
     font-size: 16px;
-    font-weight: 400;
 }
 
 /* mobile */
 
-.numberM {
-    margin: 0 0 10px 0; 
-
-    color: var(--accent-text-color);
-    
+.numberM { 
     font-size: 16px;
-    font-weight: 500;
 }
 
 .addressM {
-    margin: 0;
-
-    color: var(--main-text-color);
-    
     font-size: 14px;
-    font-weight: 400;
 }

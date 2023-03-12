@@ -8,6 +8,7 @@ export const OfficeSearchForm = () => {
     const [value, setValue] = useState("");
     const dispatch = useDispatch();
 
+    // controlled input
     const handleInputChange = event => {
         const { value } = event.currentTarget;
         setValue(value);
@@ -21,18 +22,19 @@ export const OfficeSearchForm = () => {
     return (
         <>
             <Desktop>
-                <form className={css.formD} onSubmit={handleFormSubmit}>
+                <form className={`${css.form} ${css.formD}`} onSubmit={handleFormSubmit}>
                     <input
                         type="text"
                         name="query"
                         placeholder="Введіть населений пункт"
-                        className={css.inputD}
+                        required
+                        className={css.input}
                         onChange={handleInputChange}
                         value={value}
                     />
                     <button 
                         type="submit"
-                        className={css.buttonD}
+                        className={`${css.button} ${css.buttonD}`}
                     >
                         Показати відділення
                     </button>
@@ -40,18 +42,19 @@ export const OfficeSearchForm = () => {
             </Desktop>
 
             <Tablet>
-                <form className={css.formT} onSubmit={handleFormSubmit}>
+                <form className={`${css.form} ${css.formT}`} onSubmit={handleFormSubmit}>
                     <input
                         type="text"
                         name="query"
                         placeholder="Введіть населений пункт"
-                        className={css.inputT}
+                        required
+                        className={css.input}
                         onChange={handleInputChange}
                         value={value}
                     />
                     <button 
                         type="submit"
-                        className={css.buttonT}
+                        className={`${css.button} ${css.buttonT}`}
                     >
                         Показати відділення
                     </button>
@@ -59,18 +62,19 @@ export const OfficeSearchForm = () => {
             </Tablet>
 
             <Mobile>
-                <form className={css.formM} onSubmit={handleFormSubmit}>
+                <form className={`${css.form} ${css.formM}`} onSubmit={handleFormSubmit}>
                     <input
                         type="text"
                         name="query"
                         placeholder="Введіть населений пункт"
-                        className={css.inputM}
+                        required
+                        className={css.input}
                         onChange={handleInputChange}
                         value={value}
                     />
                     <button 
                         type="submit"
-                        className={css.buttonM}
+                        className={`${css.button} ${css.buttonM}`}
                     >
                         Показати відділення
                     </button>

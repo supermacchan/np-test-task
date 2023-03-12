@@ -22,12 +22,12 @@ export const SearchHistory = () => {
         <>
             <Desktop>
                 <div className={css.historyD}>
-                    <h2 className={css.titleD}>Історія</h2>
+                    <h2 className={`${css.title} ${css.titleD}`}>Історія</h2>
                     <ul className={css.list}>
                         { history.length > 0 && 
                             history.map(item => 
                                 <li 
-                                    className={css.itemD} 
+                                    className={`${css.item} ${css.itemD}`} 
                                     key={nanoid()}
                                     onClick={handleItemClick}
                                 >
@@ -38,7 +38,7 @@ export const SearchHistory = () => {
                     { history.length > 0 &&
                         <button 
                             type='button'
-                            className={css.buttonD}
+                            className={css.button}
                             onClick={handleClearHistory}
                         >
                             Видалити всі
@@ -49,12 +49,12 @@ export const SearchHistory = () => {
 
             <Tablet>
                 <div className={css.historyT}>
-                    <h2 className={css.titleT}>Історія</h2>
+                    <h2 className={`${css.title} ${css.titleT}`}>Історія</h2>
                     <ul className={css.list}>
                         { history.length > 0 && 
                             history.map(item => 
                                 <li 
-                                    className={css.itemT} 
+                                    className={`${css.item} ${css.itemT}`} 
                                     key={nanoid()}
                                     onClick={handleItemClick}
                                 >
@@ -65,7 +65,7 @@ export const SearchHistory = () => {
                     { history.length > 0 &&
                         <button 
                             type='button'
-                            className={css.buttonT}
+                            className={css.button}
                             onClick={handleClearHistory}
                         >
                             Видалити всі
@@ -76,12 +76,12 @@ export const SearchHistory = () => {
 
             <Mobile>
                 <div className={css.historyM}>
-                    <h2 className={css.titleM}>Історія</h2>
+                    <h2 className={`${css.title} ${css.titleM}`}>Історія</h2>
                     <ul className={`${css.list} ${css.listM}`}>
                         { history.length > 0 && 
                             history.map(item => 
                                 <li 
-                                    className={css.itemM} 
+                                    className={`${css.item} ${css.itemM}`} 
                                     key={nanoid()}
                                     onClick={handleItemClick}
                                 >
@@ -92,7 +92,7 @@ export const SearchHistory = () => {
                     { history.length > 0 &&
                         <button 
                             type='button'
-                            className={css.buttonM}
+                            className={css.button}
                             onClick={handleClearHistory}
                         >
                             Видалити всі

@@ -6,33 +6,33 @@ export const AppBar = () => {
     return (
         <header className={css.header}>
             <Desktop>
-                <nav className={css.navigationD}>
-                    <NavLink to="/" className={css.navLinkD}>
+                <nav className={`${css.navigation} ${css.navigationD}`}>
+                    <NavLink to="/" className={`${css.navLink} ${css.navLinkD}`}>
                         Перевірити ТТН
                     </NavLink>
-                    <NavLink to="/offices" className={css.navLinkD}>
+                    <NavLink to="/offices" className={`${css.navLink} ${css.navLinkD}`}>
                         Список відділень
                     </NavLink>
                 </nav>
             </Desktop>
 
             <Tablet>
-                <nav className={css.navigationT}>
-                    <NavLink to="/" className={css.navLinkT}>
+                <nav className={`${css.navigation} ${css.navigationT}`}>
+                    <NavLink to="/" className={`${css.navLink} ${css.navLinkT}`}>
                         Перевірити ТТН
                     </NavLink>
-                    <NavLink to="/offices" className={css.navLinkT}>
+                    <NavLink to="/offices" className={`${css.navLink} ${css.navLinkT}`}>
                         Список відділень
                     </NavLink>
                 </nav>
             </Tablet>
 
             <Mobile>
-                <nav className={css.navigationM}>
-                    <NavLink to="/" className={css.navLinkM}>
+                <nav className={`${css.navigation} ${css.navigationM}`}>
+                    <NavLink to="/" className={`${css.navLink} ${css.navLinkM}`}>
                         Перевірити ТТН
                     </NavLink>
-                    <NavLink to="/offices" className={css.navLinkM}>
+                    <NavLink to="/offices" className={`${css.navLink} ${css.navLinkM}`}>
                         Список відділень
                     </NavLink>
                 </nav>
