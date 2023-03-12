@@ -1,17 +1,24 @@
-.history {
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* desktop */
+
+.historyD {
     position: relative;
 
     width: 200px;
     min-height: 600px;
     padding: 20px;
 
-    border: 1px solid var(--hover-bg-color);
     border-radius: 2px;
 
     background-color: var(--secondary-bg-color);
 }
 
-.title {
+.titleD {
     margin: 0 0 15px 0;
 
     color: var(--accent-text-color);
@@ -20,13 +27,7 @@
     font-weight: 700;
 }
 
-.list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.item {
+.itemD {
     margin: 0 0 10px 0;
 
     color: var(--main-text-color);
@@ -39,21 +40,21 @@
     transition: color 250ms ease;
 }
 
-.item:last-of-type {
+.itemD:last-of-type {
     margin: 0;
 }
 
-.item:hover {
+.itemD:hover {
     color: var(--accent-text-color);
 }
 
-.button {
+.buttonD {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 
-    padding: 6px 18px;
+    padding: 10px 18px;
     border: none;
     border-radius: 2px;
 
@@ -66,7 +67,148 @@
     transition: background-color 250ms ease;
 }
 
-.button:hover,
-.button:focus {
+.buttonD:hover,
+.buttonD:focus {
+    background-color: var(--hover-bg-color);
+}
+
+/* tablet */
+
+.historyT {
+    position: relative;
+
+    width: 200px;
+    min-height: 500px;
+    padding: 20px;
+
+    border-radius: 2px;
+
+    background-color: var(--secondary-bg-color);
+}
+
+.titleT {
+    margin: 0 0 15px 0;
+
+    color: var(--accent-text-color);
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.itemT {
+    margin: 0 0 10px 0;
+
+    color: var(--main-text-color);
+    
+    font-size: 17px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition: color 250ms ease;
+}
+
+.itemT:last-of-type {
+    margin: 0;
+}
+
+.itemT:hover {
+    color: var(--accent-text-color);
+}
+
+.buttonT {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--accent-text-color);
+    color: var(--secondary-text-color);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: background-color 250ms ease;
+}
+
+.buttonT:hover,
+.buttonT:focus {
+    background-color: var(--hover-bg-color);
+}
+
+/* mobile */
+
+.historyM {
+    position: relative;
+
+    width: 320px;
+    min-height: 100px;
+    padding: 20px;
+
+    border-top: 1px solid var(--hover-bg-color);
+    border-radius: 2px;
+
+    background-color: var(--main-bg-color);
+}
+
+.titleM {
+    margin: 0 0 15px 0;
+
+    color: var(--accent-text-color);
+
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.listM {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 40px;
+}
+
+.itemM {
+    margin: 0 0 10px 0;
+
+    color: var(--main-text-color);
+    
+    font-size: 16px;
+    font-weight: 400;
+
+    transition: color 250ms ease;
+}
+
+.itemM:active {
+    color: var(--accent-text-color);
+}
+
+.itemM:last-of-type {
+    margin: 0;
+}
+
+.buttonM {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 10px 18px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--accent-text-color);
+    color: var(--secondary-text-color);
+
+    font-size: 13px;
+    font-weight: 500;
+
+    transition: background-color 250ms ease;
+}
+
+.buttonM:focus {
     background-color: var(--hover-bg-color);
 }
