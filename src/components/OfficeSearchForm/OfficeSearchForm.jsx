@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { fetchOffices } from "redux/operations";
+import { Desktop, Tablet, Mobile } from "utils/screens";
 import css from './OfficeSearchForm.module.css';
 
 export const OfficeSearchForm = () => {
@@ -18,21 +19,63 @@ export const OfficeSearchForm = () => {
     }
 
     return (
-        <form className={css.form} onSubmit={handleFormSubmit}>
-            <input
-                type="text"
-                name="query"
-                placeholder="Введіть населений пункт"
-                className={css.input}
-                onChange={handleInputChange}
-                value={value}
-            />
-            <button 
-                type="submit"
-                className={css.button}
-            >
-                Показати відділення
-            </button>
-        </form>
+        <>
+            <Desktop>
+                <form className={css.formD} onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        name="query"
+                        placeholder="Введіть населений пункт"
+                        className={css.inputD}
+                        onChange={handleInputChange}
+                        value={value}
+                    />
+                    <button 
+                        type="submit"
+                        className={css.buttonD}
+                    >
+                        Показати відділення
+                    </button>
+                </form>
+            </Desktop>
+
+            <Tablet>
+                <form className={css.formT} onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        name="query"
+                        placeholder="Введіть населений пункт"
+                        className={css.inputT}
+                        onChange={handleInputChange}
+                        value={value}
+                    />
+                    <button 
+                        type="submit"
+                        className={css.buttonT}
+                    >
+                        Показати відділення
+                    </button>
+                </form>
+            </Tablet>
+
+            <Mobile>
+                <form className={css.formM} onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        name="query"
+                        placeholder="Введіть населений пункт"
+                        className={css.inputM}
+                        onChange={handleInputChange}
+                        value={value}
+                    />
+                    <button 
+                        type="submit"
+                        className={css.buttonM}
+                    >
+                        Показати відділення
+                    </button>
+                </form>
+            </Mobile>
+        </>
     )
 }
