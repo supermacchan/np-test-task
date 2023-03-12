@@ -3,13 +3,15 @@
     background-color: var(--accent-bg-color);
 }
 
-.navigation {
+/* desktop */
+
+.navigationD {
     display: flex;
     justify-content: center;
     gap: 30px;
 }
 
-.navLink {
+.navLinkD {
     padding: 15px 18px;
     border: none;
     border-radius: 2px;
@@ -25,8 +27,67 @@
     color 250ms ease;
 }
 
-.navLink:hover,
-.navLink:focus {
+.navLinkD:hover,
+.navLinkD:focus {
+    background-color: var(--hover-bg-color);
+    color: var(--secondary-text-color);
+}
+
+/* tablet */
+
+.navigationT {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navLinkT {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: background-color 250ms ease,
+    color 250ms ease;
+}
+
+.navLinkT:hover,
+.navLinkT:focus {
+    background-color: var(--hover-bg-color);
+    color: var(--secondary-text-color);
+}
+
+/* mobile */
+
+.navigationM {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navLinkM {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 2px;
+
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    transition: background-color 250ms ease,
+    color 250ms ease;
+}
+
+.navLinkM:focus {
     background-color: var(--hover-bg-color);
     color: var(--secondary-text-color);
 }
