@@ -1,7 +1,7 @@
 .list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 45px 0;
 }
 
 /* desktop */
@@ -168,7 +168,6 @@
 .listM {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 40px;
 }
 
 .itemM {
